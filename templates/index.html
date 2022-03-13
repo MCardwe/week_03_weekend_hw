@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% block content %}
+
+<h1>Lets play some Rock, Paper, Scissors!</h1>
+
+<h2>Player 1, make your choice!</h2>
+<h3>Please choose between, Rock, Paper, or Scissors</h3>
+<form action="/player2">
+    <label for="player_1_choice">Player 1 choice - </label>
+    <input type="text" name="player_1_choice">
+    <input type="submit" value="Submit">
+</form>
+
+{% endblock %}
